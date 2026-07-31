@@ -21,7 +21,7 @@
 			<concurrency support="none"/>
 			<void_safety support="all"/>
 		</capability>
-		<library name="base" location="$ISE_LIBRARY\library\base\base-safe.ecf"/>
+		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
 		<cluster name="algae" location="library\" recursive="true"/>
 	</target>
 	<target name="tests" extends="algae">
@@ -40,7 +40,7 @@
 		<capability>
 			<concurrency support="none"/>
 		</capability>
-		<library name="time" location="$ISE_LIBRARY\library\time\time-safe.ecf"/>
+		<library name="time" location="$ISE_LIBRARY\library\time\time.ecf"/>
 		<cluster name="benchmark" location=".\benchmark\" recursive="true"/>
 	</target>
 </system>

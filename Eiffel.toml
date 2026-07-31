@@ -1,0 +1,25 @@
+[project]
+name = "algae"
+version = "0.0.0"
+type = "library"
+uuid = "0BD05554-129B-443B-817C-3E8699BB3295"
+ecf-managed = false
+ecf = "algae.ecf"
+default-target = "algae"
+
+[sources]
+clusters = ["library"]
+
+[targets."tests"]
+root = "ANY.default_create"
+sources = ["tests"]
+extends = "algae"
+
+[targets."benchmark"]
+root = "RUN_BENCHMARKS.make"
+sources = ["benchmark"]
+extends = "algae"
+
+[test]
+target = "tests"
+runner = "autotest"
