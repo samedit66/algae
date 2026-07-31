@@ -3,6 +3,12 @@
 This library implements two-dimensional matrices for the Eiffel
 programming language (http://www.eiffel.com).
 
+> [!IMPORTANT]
+> This fork is the same good 'n' ol' `ALGAE` library,
+> but with support for the `EVM` project manager.
+> Nothing changed, except that now it is using just `base.ecf` and `time.ecf`
+> and prefectly fine works using `EVM`.
+
 ## Version history
 
   - 2018-09-16: Version 0.9 - First public beta release
@@ -15,8 +21,23 @@ GOBO Eiffel, but has not been tested.
 
 ## Getting started
 
+### EVM-based installation
+
+The following instructions will clone the repository, setup default `EVM`-managed project and build it.
+
+```console
+evm new algae_demo
+cd algae_demo
+evm add algae --git https://github.com/samedit66/algae --branch master
+evm build
+```
+
+### Default installation
+
 Checkout the code from the repository. Add the 'algae.ecf' as a
 library to your project.
+
+### Example
 
 To create matrices, you must inherit from the `ALGAE_USER` class. This
 will make the `al` feature available to you, which is a shared
