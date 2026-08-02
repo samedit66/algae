@@ -1,2 +1,10 @@
-format-version = 1
-manifest-fingerprint = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+format-version = 2
+manifest-fingerprint = "0929e7f8469fd817a6dc3d0dc83260faffae325c56ed5d3cd13b31b8c8d06b01"
+
+[[toolchain]]
+provider = "ise"
+version = "25.12"
+revision = "25.12.98922"
+platform = "macos"
+architecture = "arm64"
+source = "https://www.eiffel.com/cdn/EiffelStudio/25.12/98922/Eiffel_25.12_rev_98922-macosx-armv6.tar.bz2"

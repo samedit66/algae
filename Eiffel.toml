@@ -23,3 +23,7 @@ extends = "algae"
 [test]
 target = "tests"
 runner = "autotest"
+
+[toolchain]
+default = "ise@25.12"
+matrix = ["ise@25.12"]
